@@ -1,0 +1,7 @@
+<div *ngIf="this.counter$ | async as counter" class="dialog">
+  {{ counter.counter }} -> {{ counter.counter * 2 }}
+
+  <div>
+    <button (click)="close(counter.counter)">Close</button>
+  </div>
+</div>
